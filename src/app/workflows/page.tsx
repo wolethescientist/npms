@@ -566,7 +566,7 @@ function CreateRequestDialog({
             <Label className="text-sm font-medium mb-1.5">
               Action Requested <span className="text-red-500">*</span>
             </Label>
-            <Select value={actionRequested} onValueChange={setActionRequested} disabled={saving}>
+            <Select value={actionRequested} onValueChange={(v) => setActionRequested(v ?? '')} disabled={saving}>
               <SelectTrigger className="h-10 w-full">
                 {actionRequested || <span className="text-muted-foreground text-sm">Select action type</span>}
               </SelectTrigger>
@@ -585,7 +585,7 @@ function CreateRequestDialog({
             <Label className="text-sm font-medium mb-1.5">
               Send To <span className="text-red-500">*</span>
             </Label>
-            <Select value={assignedTo} onValueChange={setAssignedTo} disabled={saving}>
+            <Select value={assignedTo} onValueChange={(v) => setAssignedTo(v ?? '')} disabled={saving}>
               <SelectTrigger className="h-10 w-full">
                 {assignedUser
                   ? `${assignedUser.full_name}`
