@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Building2, Shield, FileText, BarChart3, Users, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Shield, FileText, BarChart3, Users, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -11,8 +12,8 @@ export default function HomePage() {
       <header className="border-b border-[#0F6E56]/10 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-[#0F6E56] flex items-center justify-center shadow-lg shadow-[#0F6E56]/20">
-              <Building2 className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <Image src="/nigeria-coa.png" alt="Nigeria Coat of Arms" width={40} height={40} className="object-contain" />
             </div>
             <div>
               <h1 className="font-bold text-lg text-[#085041] tracking-tight">NPMS</h1>
