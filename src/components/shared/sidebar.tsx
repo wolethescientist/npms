@@ -178,6 +178,7 @@ export default function Sidebar({ profile }: SidebarProps) {
           <div className="animate-fade-in min-w-0">
             <h1 className="font-bold text-sm leading-tight text-foreground">NPMS</h1>
             <p className="text-[10px] text-muted-foreground leading-tight">Policy Management</p>
+            <p className="text-[9px] text-muted-foreground/50 leading-tight mt-0.5">Alhaji Ibrahim Audu</p>
           </div>
         )}
       </div>
