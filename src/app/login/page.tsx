@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
-import { Building2, ArrowRight, Eye, EyeOff } from 'lucide-react';
+import { ArrowRight, Eye, EyeOff } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -61,8 +62,8 @@ function LoginForm() {
       <div className="hidden lg:flex lg:w-[45%] bg-[#0F6E56] relative overflow-hidden items-center justify-center p-12">
         <div className="absolute inset-0 bg-gradient-to-br from-[#085041] to-[#1D9E75]" />
         <div className="relative z-10 text-white max-w-md animate-fade-in">
-          <div className="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur flex items-center justify-center mb-8">
-            <Building2 className="w-8 h-8 text-white" />
+          <div className="w-16 h-16 flex items-center justify-center mb-8">
+            <Image src="/nigeria-coa.png" alt="Nigeria Coat of Arms" width={64} height={64} className="object-contain drop-shadow-lg" />
           </div>
           <h1 className="text-4xl font-bold mb-4 tracking-tight">National Policy<br />Management System</h1>
           <p className="text-white/70 leading-relaxed mb-8">
@@ -90,8 +91,8 @@ function LoginForm() {
       <div className="flex-1 flex items-center justify-center p-6 md:p-12">
         <div className="w-full max-w-md animate-fade-in">
           <div className="lg:hidden flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl bg-[#0F6E56] flex items-center justify-center">
-              <Building2 className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 flex items-center justify-center">
+              <Image src="/nigeria-coa.png" alt="Nigeria Coat of Arms" width={40} height={40} className="object-contain" />
             </div>
             <div>
               <h1 className="font-bold text-lg text-[#085041]">NPMS</h1>

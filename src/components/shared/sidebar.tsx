@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -12,7 +13,6 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
-  Building2,
   Users,
   BookOpen,
   Activity,
@@ -171,8 +171,8 @@ export default function Sidebar({ profile }: SidebarProps) {
     >
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5 border-b border-border min-h-[72px]">
-        <div className="w-9 h-9 rounded-lg bg-[#0F6E56] flex items-center justify-center flex-shrink-0">
-          <Building2 className="w-5 h-5 text-white" />
+        <div className="w-9 h-9 flex items-center justify-center flex-shrink-0">
+          <Image src="/nigeria-coa.png" alt="Nigeria Coat of Arms" width={36} height={36} className="object-contain" />
         </div>
         {!collapsed && (
           <div className="animate-fade-in min-w-0">
